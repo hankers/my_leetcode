@@ -27,7 +27,11 @@ public:
 			return addDigits(getDigit(num));
 		}
     	}
-    	// easy method
+    	/* easy method
+	 * 1) num <=9, return num
+         * 2) num > 9, reutrn num%9 if num%9>0
+         *    return 9 if num%9 ==0
+	 */
     	int addDigits02(int num) {
     		return (num-1)%9 + 1;
 	}
